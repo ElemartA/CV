@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+:root {
+    --accent-color: #F34B3E;
+    --primary-color: #E0E0E0;
+    --text-color: black;
+    --accent-color2: #96010D;
+    --additional-color: #B8CABA;
+    --additional-color2: #5A6A5D;
+    --title-size: 32px;
+    --primary-size: 26px;
+    --primary-margin: 20px;
+    --primary-font: 'Proza Libre', sans-serif;
+}
+@media (max-width: 1980px) {
+    
+body {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    max-width: 1903px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--title-size);
+}
+
+header {
+    background-color: var(--accent-color2);
+}
+
+.header__title {
+    font-size: var(--title-size);
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ .header__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.header__item {
+    max-width: 100px;
+    
+}
+
+.header__item a {
+    font-size: 28px;
+    color: var(--primary-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.section {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.article1 {
+    width: 100%;
+    height: 350px;
+    background-color: var(--additional-color);
+   
+}
+
+.article1__title {
+    font-size: var(--title-size);
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--primary-margin);
+    color: var(--primary-color);
+    padding: 20px 0px;
+}
+
+.article1__block {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.article1__block-text {
+    max-width: 700px;
+    font-size: var(--primary-size);
+    font-family:var(--primary-font)
+}
+
+.article1__img {
+    max-width: 80%;
+    height: 85%;
+}
+
+.article2 {
+ width: 100%;
+ height: 350px;
+ background-color: var(--accent-color);
+}
+
+.article3 {
+ width: 100%;
+ height: 350px;
+ background-color: var(--additional-color2);
+}
+
+.article4 {
+ width: 100%;
+ height: 350px;
+ background-color: var(--accent-color2);
+}
+
+}
+
+
+
+
+@media (max-width: 695px) {
+     
+}
+
+
+@media (max-width: 394px) {
+       
+}
