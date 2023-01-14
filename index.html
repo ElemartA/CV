@@ -12,63 +12,84 @@
 
 <body class="body">
     <header>
-        <h1 class="header__title">Hi! I'm Martynova Alena</h1>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#a1" class="header__item-link active">About me</a>
-                </li>
-
-                <li class="header__item">
-                    <a href="#a2" class="header__item-link">Education</a>
-                </li>
-
-                <li class="header__item">
-                    <a href="#a3" class="header__item-link">Projects</a>
-                </li>
-
-                <li class="header__item">
-                    <a href="#a4" class="header__item-link ">Slider</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__wrapper">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#a1" class="header__item-link">About me</a>
+                    </li>
+    
+                    <li class="header__item">
+                        <a href="#a2" class="header__item-link">Education</a>
+                    </li>
+    
+                    <li class="header__item">
+                        <a href="#a3" class="header__item-link">Projects</a>
+                    </li>
+    
+                    <li class="header__item">
+                        <a href="#a4" class="header__item-link ">Slider</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__social">
+                <ul class="header__social-icons">
+                    <li class="header__social-icon">
+                        <a href="https://www.linkedin.com/in/alena-martynova/" class="header__social-link">
+                            <img src="./assets/linkedin.png" alt="linkedin" class="header__social-ico">
+                        </a>
+                    </li>
+                    <li class="header__social-icon">
+                        <a href="https://github.com/ElemartA" class="header__social-link">
+                            <img src="./assets/github.png" alt="github" class="header__social-ico">
+                        </a>
+                    </li>
+                    <li class="header__social-icon">
+                        <a href="https://www.codewars.com/users/ElemartA" class="header__social-link">
+                            <img src="./assets/codewars.png" alt="codewars" class="header__social-ico">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </header>
     <main class="main">
         <section class="section">
-            <article class="article1">
+            <article id="a1" class="article1">
                 <h2 class="article1__title">About me</h2>
                 <div class="article1__block">
-                    <img alt="avatar" src="" />
-                    <div class="article1__block-text">Start programming in 2021. Front-end-developer. Stack: JS, TS,
+                    <img class="article1__block-photo" alt="avatar" src="./assets/ava.jpg" />
+                    <div class="article1__block-text">Hi! I'm Martynova Alena. Start programming in 2021. Front-end-developer. Stack: JS, TS,
                         React, Redux-Toolkit, Git, Bootstrap.</div>
                 </div>
 
             </article>
-            <article class="article2">
+            <article id="a2" class="article2">
                 <h2 class="article1__title">Education</h2>
                 <div class="article1__block">
                     <div>
-                        <h3>Belarusian State Economic UniversityBelarusian</h3>
-                        <p>2008-2012</p>
+                        <h3 class="article1__block-title">Belarusian State Economic University</h3>
+                        <p class="article1__block-subtitle">2008-2012</p>
                     </div>
-                    <div>
-                        <h3>The Rolling Scopes School</h3>
-                        <p>JavaScript/Front-end 2021Q1JavaScript/Front-end 2021Q1</p>
+                    <div class="artical1__block-wrap">
+                        <h3 class="article1__block-title">The Rolling Scopes School</h3>
+                        <p class="article1__block-subtitle">JavaScript/Front-end 2021Q1JavaScript/Front-end 2021Q1</p>
                         <a href="https://app.rs.school/certificate/ltl20sli">
-                            <button>accreditation</button>
+                            <button class="button">accreditation</button>
                         </a>
                     </div>
                     <div>
-                        <h3>The Rolling Scopes SchoolT</h3>
-                        <p>React 2022 Q1(JavaScript)React 2022 Q1(JavaScript)</p>
+                        <h3 class="article1__block-title">The Rolling Scopes SchoolT</h3>
+                        <p class="article1__block-subtitle">React 2022 Q1(JavaScript)React 2022 Q1(JavaScript)</p>
                         <a href="https://app.rs.school/certificate/yfcuegy4">
-                            <button>accreditation</button>
+                            <button class="button">accreditation</button>
                         </a>
                     </div>
                 </div>
 
             </article>
-            <article class="article3">
+            <article id="a3" class="article3">
                 <h2 class="article1__title">My Projects</h2>
                 <div class="article1__block">
                     <div><a href="https://searchmoviekinopoisk.netlify.app/"><img class="article1__img" alt="project1"
@@ -80,14 +101,28 @@
                 </div>
 
             </article>
-            <article class="article4">
-                <h2 class="article1__title">Slider</h2>
-                <div></div>
-                <div></div>
-                <div></div>
+            <article id="a4" class="article4">
+                <h2 class="article1__title">Slider for fun</h2>
+                <div class="wrapper">
+                    <div class="slider__container">
+                        <div class="slider__track">
+                            <div class="slider__track-item"><img class="slider__track-img" src="./assets/11.jpeg" alt="slider_img1" class="slider__img"></div>
+                            <div class="slider__track-item"><img class="slider__track-img" src="./assets/12.jpeg" alt="slider_img2" class="slider__img"></div>
+                            <div class="slider__track-item"><img class="slider__track-img" src="./assets/13.jpeg" alt="slider_img3" class="slider__img"></div>
+                            <div class="slider__track-item"><img class="slider__track-img" src="./assets/14.jpeg" alt="slider_img4" class="slider__img"></div>
+                            <div class="slider__track-item"><img class="slider__track-img" src="./assets/15.jpeg" alt="slider_img5" class="slider__img"></div>
+                        </div>        
+                    </div> 
+                    <div class="slider__buttons">
+                        <button class="slider__buttons-prev">Prev</button>
+                        <button class="slider__buttons-next">Next</button>
+                   </div>
+                </div>
+                
             </article>
         </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
