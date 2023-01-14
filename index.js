@@ -38,6 +38,18 @@ const setPosition = () => {
 const checkBtns = () => {
   btnPrev.disabled = position === 0;
   btnNext.disabled = position <= -(itemCount - slidesToShow) * itemWidth;
+
+  if (btnPrev.disabled) {
+    btnPrev.style.backgroundImage = "url(./assets/unionWhiteRight.svg)";
+    btnPrev.style.transform = "rotate(180deg)";
+  } else {
+    btnPrev.style.backgroundImage = "url(./assets/UnionRight.svg)";
+  }
+  if (btnNext.disabled) {
+    btnNext.style.backgroundImage = "url(./assets/unionWhiteRight.svg)";
+  } else {
+    btnNext.style.backgroundImage = "url(./assets/UnionRight.svg)";
+  }
 };
 
 checkBtns();
