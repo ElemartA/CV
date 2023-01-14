@@ -124,7 +124,6 @@ html {
         font-size: var(--title-size);
         display: flex;
         justify-content: center;
-        margin-bottom: var(--primary-margin);
         color: var(--accent-color);
         padding: 20px 0px;
     }
@@ -190,7 +189,7 @@ html {
 
     .article2 {
         width: 80%;
-        height: 350px;
+        height: 380px;
         background-color: var(--primary-color);
         margin: 0 auto;
         margin-bottom: 20px;
@@ -213,7 +212,7 @@ html {
     }
 
     .wrapper {
-        max-width: 600px;
+        max-width: 400px;
         margin: 0 auto;
         position: relative;
     }
@@ -234,7 +233,7 @@ html {
     .slider__track-img {
         max-width:100%;
         height: 350px;
-        margin-left: 20%;
+        margin-left: 6%;
     }
 
     .slider__buttons {
@@ -270,7 +269,79 @@ html {
 
 
 
-@media (max-width: 695px) {}
+@media (max-width: 905px) {
+    .header__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__social {
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .header__social-ico {
+        width: 35px;
+    }
+
+    .article2 {
+        height: 470px;
+    }
+    
+    .article1 {
+        height: 650px;
+    }
+    .article1__block {
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+        
+    }
+
+    .article1__block-photo {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .article1__block-text {
+        width: 100%;
+    }
+    .article1__block-title {
+        margin-bottom: 10px;
+        /* text-align: center; */
+        margin-top: 15px;
+    }
+
+    .article1__block-subtitle {
+        margin-bottom: 10px;
+        /* text-align: center; */
+    }
+
+    .button {
+        margin-bottom: 10px;
+        font-size: var(--primary-size);
+        
+    }
+
+    .article3 {
+        height: 900px;
+    }
+
+    .article1__block-item {
+        margin: 10px;
+    }
+
+    .slider__buttons-prev {
+        left: 53px;
+        top: 171px;
+    }
+
+    .slider__buttons-next {
+        right: 53px;
+        top: 171px;
+    }
+
+}
 
 
 @media (max-width: 394px) {}
