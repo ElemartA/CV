@@ -32,7 +32,6 @@ btnPrev.addEventListener("click", () => {
 
 const setPosition = () => {
   track.style.transform = `translateX(${position}px)`;
-  console.log(position);
 };
 
 const checkBtns = () => {
@@ -53,3 +52,28 @@ const checkBtns = () => {
 };
 
 checkBtns();
+
+const burger = document.querySelector(".header__hamburger");
+const headerIcons = document.querySelector(".header__list");
+
+const toggleMenu = () => {
+  headerIcons.classList.toggle("show");
+};
+
+burger.addEventListener("click", () => toggleMenu());
+
+const header = document.querySelector(".header");
+
+window.onscroll = function () {
+  myFunction();
+};
+
+let sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
